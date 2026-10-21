@@ -1,0 +1,272 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cyril Dale | My Little World</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <a href="#home" class="logo">Cyril's World ♡</a>
+
+            <div class="nav-links">
+                <a href="#home">Home</a>
+                <a href="#about">About</a>
+                <a href="#hobbies">Hobbies</a>
+                <a href="#dogs">My Dogs</a>
+                <a href="#skills">IT Life</a>
+                <a href="#dreams">Dreams</a>
+            </div>
+
+            <button id="themeToggle" class="theme-btn" aria-label="Toggle dark mode">
+                🌙
+            </button>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero" id="home">
+            <div class="hero-content">
+                <p class="eyebrow">PAGE ABOUT ME ✨</p>
+
+                <h1>Hi, I'm <span>Cyril Dale!</span></h1>
+
+                <h2 class="typing-line">
+                    <span id="typingText"></span><span class="typing-cursor">|</span>
+                </h2>
+
+                <p class="hero-description">
+                    A little introduction to my life, the things I love,
+                    the dreams I'm chasing, and the person I'm becoming.
+                </p>
+
+                <div class="hero-buttons">
+                    <a href="#about" class="main-btn">Get to know me ♡</a>
+                    <a href="#hobbies" class="outline-btn">Explore my world</a>
+                </div>
+
+                <p class="hero-note">Collecting memories, chasing dreams, and enjoying life.♡</p>
+            </div>
+
+            <div class="hero-image">
+                <div class="photo-frame">
+                    <img src="c:\Users\91460\Downloads\97106db8-4c95-410d-8816-3ccdc584e521.jpg" alt="A photo of Cyril Dale"
+                         onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+
+                    <div class="photo-placeholder">
+                        <span>📸</span>
+                        <p>My photo goes here!</p>
+                        <small>Add your photo as my-photo.jpg</small>
+                    </div>
+                </div>
+
+                <div class="floating-note note-one">✨ Dream big</div>
+                <div class="floating-note note-two">🐾 Dog lover</div>
+            </div>
+        </section>
+
+        <section class="section" id="about">
+            <div class="section-heading">
+                <p class="eyebrow">A LITTLE ABOUT ME</p>
+                <h2>More than just <span>a name.</span></h2>
+                <p>Here are a few things that make me, me.</p>
+            </div>
+
+            <div class="info-grid">
+                <article class="info-card">
+                    <div class="card-icon">🎓</div>
+                    <h3>Student Life</h3>
+                    <p>
+                        I'm taking up Information Technology at the
+                        University of Cebu. I'm learning new things,
+                        improving my skills, and figuring things out
+                        one step at a time.
+                    </p>
+                </article>
+
+                <article class="info-card">
+                    <div class="card-icon">💻</div>
+                    <h3>Working Scholar</h3>
+                    <p>
+                        Balancing school and duty can be challenging,
+                        but it teaches me responsibility, patience,
+                        and how to become more independent.
+                    </p>
+                </article>
+
+                <article class="info-card">
+                    <div class="card-icon">🌱</div>
+                    <h3>Always Growing</h3>
+                    <p>
+                        I may not know everything yet, but I'm willing
+                        to learn, make mistakes, and keep improving
+                        myself along the way.
+                    </p>
+                </article>
+            </div>
+        </section>
+
+        <section class="section alternate" id="hobbies">
+            <div class="section-heading">
+                <p class="eyebrow">THINGS THAT MAKE ME HAPPY</p>
+                <h2>My kind of <span>happiness.</span></h2>
+                <p>Click a card to discover a little more about me!</p>
+            </div>
+
+            <div class="hobby-grid">
+                <article class="hobby-card" tabindex="0">
+                    <div class="hobby-icon">🎧</div>
+                    <h3>Music</h3>
+                    <p>My everyday companion.</p>
+                    <div class="hobby-detail">
+                        Love songs, pop, or worship music,
+                        there's always a song for whatever I'm feeling.
+                    </div>
+                    <span class="click-hint">Click to discover ♡</span>
+                </article>
+
+                <article class="hobby-card" tabindex="0">
+                    <div class="hobby-icon">💃</div>
+                    <h3>Dancing</h3>
+                    <p>Let the music play.</p>
+                    <div class="hobby-detail">
+                        Dancing lets me express myself, and just having fun.
+                    </div>
+                    <span class="click-hint">Click to discover ♡</span>
+                </article>
+
+                <article class="hobby-card" tabindex="0">
+                    <div class="hobby-icon">📖</div>
+                    <h3>AU Stories</h3>
+                    <p>One story turns into five more.</p>
+                    <div class="hobby-detail">
+                        I enjoy getting lost in alternate-universe
+                        stories, especially when the characters and
+                        plot keep me curious.
+                    </div>
+                    <span class="click-hint">Click to discover ♡</span>
+                </article>
+            </div>
+        </section>
+
+        <section class="section dog-section" id="dogs">
+            <div class="section-heading">
+                <p class="eyebrow">MY LITTLE HAPPY PLACE 🐾</p>
+                <h2>Life is better with <span>dogs.</span></h2>
+                <p>Forever my favorite kind of love.</p>
+            </div>
+
+            <div class="dog-card">
+                <div class="dog-emoji">🐶 🐕 🐾</div>
+                <h3>Welcome to my dog corner!</h3>
+                <p>
+                    I'm a proud dog lover with two Shihtzus
+                    and one Pomeranian.
+                </p>
+                <p id="dogMessage">Need a little smile? Tap the button below!</p>
+                <button id="dogBtn" class="main-btn">
+                    Give me some pawsitivity ♡
+                </button>
+            </div>
+        </section>
+
+        <section class="section alternate" id="skills">
+            <div class="section-heading">
+                <p class="eyebrow">MY IT JOURNEY</p>
+                <h2>Learning one line <span>at a time.</span></h2>
+                <p>I'm still learning, but every little progress counts.</p>
+            </div>
+
+            <div class="skill-grid">
+                <article class="skill-card">
+                    <div class="card-icon">🌐</div>
+                    <h3>HTML</h3>
+                    <p>Building the structure of a webpage.</p>
+                </article>
+
+                <article class="skill-card">
+                    <div class="card-icon">🎨</div>
+                    <h3>CSS</h3>
+                    <p>Making websites look more attractive.</p>
+                </article>
+
+                <article class="skill-card">
+                    <div class="card-icon">⚡</div>
+                    <h3>JavaScript</h3>
+                    <p>Adding actions and interactive features.</p>
+                </article>
+
+                <article class="skill-card">
+                    <div class="card-icon">🗄️</div>
+                    <h3>MySQL</h3>
+                    <p>Learning how to organize and manage data.</p>
+                </article>
+            </div>
+
+        </section>
+
+        <section class="section" id="dreams">
+            <div class="section-heading">
+                <p class="eyebrow">A FUTURE I'M WORKING TOWARD</p>
+                <h2>Small steps, <span>big dreams.</span></h2>
+                <p>These are some of the things I hope to achieve.</p>
+            </div>
+
+            <div class="dream-list">
+                <div class="dream-item">
+                    <span>🎓</span>
+                    <div>
+                        <h3>Graduate from college</h3>
+                        <p>Finish this chapter and make my hard work worth it.</p>
+                    </div>
+                </div>
+
+                <div class="dream-item">
+                    <span>💻</span>
+                    <div>
+                        <h3>Become better at IT</h3>
+                        <p>Improve my coding skills and create useful projects.</p>
+                    </div>
+                </div>
+
+                <div class="dream-item">
+                    <span>✈️</span>
+                    <div>
+                        <h3>Explore new places</h3>
+                        <p>Experience new things and make memories along the way.</p>
+                    </div>
+                </div>
+
+                <div class="dream-item">
+                    <span>🌷</span>
+                    <div>
+                        <h3>Build a life I'm proud of</h3>
+                        <p>Keep growing while staying true to who I am.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="quote-section">
+            <p class="eyebrow">A LITTLE REMINDER</p>
+            <h2 id="quoteText">
+                "You don't have to have everything figured out to keep moving forward."
+            </h2>
+            <button id="quoteBtn" class="outline-btn">Another reminder ♡</button>
+        </section>
+    </main>
+
+    <footer>
+        <p>Made with ♡ by Cyril Dale</p>
+        <p>Still learning, still growing, still dreaming. ✨</p>
+        <a href="#home">Back to the beginning ↑</a>
+    </footer>
+
+    <button id="backToTop" aria-label="Back to top">↑</button>
+</body>
+</html>
